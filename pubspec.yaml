@@ -1,7 +1,7 @@
 name: personal_life_seva_assistant
 description: A customizable personal life, health reminder, checklist and seva assistant.
 publish_to: "none"
-version: 0.1.1+2
+version: 0.1.1+3
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
