@@ -28,8 +28,14 @@ jobs:
           flutter build apk --release
           cp build/app/outputs/flutter-apk/app-release.apk app-release.apk
 
+      - name: Read app version
+        id: version
+        shell: bash
+        run: echo "tag=v$(sed -n 's/^version: *//p' pubspec.yaml)" >> "$GITHUB_OUTPUT"
+
       - name: Publish GitHub Release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ steps.version.outputs.tag }}
           files: app-release.apk
           generate_release_notes: true
