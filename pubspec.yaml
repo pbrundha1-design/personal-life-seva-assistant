@@ -1,0 +1,27 @@
+name: personal_life_seva_assistant
+description: A customizable personal life, health reminder, checklist and seva assistant.
+publish_to: "none"
+version: 0.1.1+2
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  geolocator: ^14.0.2
+  http: ^1.5.0
+  flutter_local_notifications: ^19.4.2
+  open_filex: ^4.7.0
+  package_info_plus: ^8.3.0
+  path_provider: ^2.1.5
+  shared_preferences: ^2.3.2
+  timezone: ^0.10.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
